@@ -2,7 +2,7 @@ package ex13_serializacion2;
 
 import java.io.Serializable;
 
-class Product implements Serializable {
+public class Product implements Serializable {
 
     private String codigo;
     private String descripcion;
