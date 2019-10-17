@@ -10,7 +10,7 @@ public class Ex13_serializacion2 {
         String[] desc = {"parafusos", "cravos ", "tachas"};
         Double[] prezo = {3.0, 4.0, 5.0};
 
-        FileOutputStream fichR = new FileOutputStream("C:\\Users\\luis-\\Desktop\\2ºDAM\\AD\\ex13\\serial2.txt");
+        FileOutputStream fichR = new FileOutputStream("/home/oracle/Desktop/ex13/serial2.txt");
         ObjectOutputStream fichrOOS = new ObjectOutputStream(fichR);
 
         //Creamos en bucle el objeto y lo guardamos ya directamente en el fichero
@@ -27,7 +27,7 @@ public class Ex13_serializacion2 {
         fichrOOS.close();
         fichR.close();
 
-        FileInputStream fichL = new FileInputStream("C:\\Users\\luis-\\Desktop\\2ºDAM\\AD\\ex13\\serial2.txt");
+        FileInputStream fichL = new FileInputStream("/home/oracle/Desktop/ex13/serial2.txt");
         ObjectInputStream fichlOIS = new ObjectInputStream(fichL);
 
         Object contenido = 0;
